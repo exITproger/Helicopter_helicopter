@@ -61,12 +61,6 @@
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GameObject.cs" />
-    <Compile Include="HeroSkins.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeroSkins.Designer.cs">
-      <DependentUpon>HeroSkins.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeroSkins.resx">
-      <DependentUpon>HeroSkins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
@@ -185,6 +176,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BackGroundMainInGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround3InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround2InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround1InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стенка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstBackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopBackGround.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

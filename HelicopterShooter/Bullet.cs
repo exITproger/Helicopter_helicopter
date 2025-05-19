@@ -10,19 +10,23 @@ namespace HelicopterShooter
 {
     public class Bullet : GameObject
     {
+        private const int BulletWidth = 20;
+        private const int BulletHeight = 10;
+        private const int BulletSpeed = 25;
+        private const string BulletTag = "bullet";
         public Bullet(Control container, int startX, int startY)
         {
             Sprite = new PictureBox
             {
-                Size = new Size(20, 10),
+                Size = new Size(BulletWidth, BulletHeight),
                 BackColor = Color.Maroon,
                 Left = startX,
                 Top = startY,
-                Tag = "bullet"
+                Tag = BulletTag
             };
 
             container.Controls.Add(Sprite);
-            Speed = 25;
+            Speed = BulletSpeed;
         }
 
         public bool IsOutOfScreen(int screenWidth)

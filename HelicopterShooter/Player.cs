@@ -10,7 +10,7 @@ namespace HelicopterShooter
 {
     public class Player : GameObject
     {
-        private const int PlayerSpeed = 7;
+        private const int PlayerSpeed = 15;
 
         private bool _movingUp, _movingDown;
 

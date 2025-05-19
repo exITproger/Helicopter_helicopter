@@ -12,9 +12,11 @@ namespace HelicopterShooter
 {
     public partial class ShopForm : Form
     {
+
         public ShopForm()
         {
             InitializeComponent();
+            DoubleBuffered = true;
             KeyPreview = true;
             KeyDown += ShopForm_KeyDown;
         }
@@ -27,12 +29,6 @@ namespace HelicopterShooter
                 mainMenu.Show();
                 Close();
             }
-        }
-        private void HeroSkinsButton_Click(object sender, EventArgs e)
-        {
-            HeroSkins heroskins = new HeroSkins();
-            heroskins.Show();
-            Hide();
         }
 
         private void BackGroundSkinsButton_Click(object sender, EventArgs e)

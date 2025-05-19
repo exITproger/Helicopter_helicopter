@@ -10,7 +10,10 @@ namespace HelicopterShooter
 {
     public class UFO : GameObject
     {
-        private const int RespawnDelay = 120; //респаун. МБ стоит поменять время или менять его в ходе игры.
+        private const int UFOWidth = 110;
+        private const int UFOHeight = 100;
+        private const string UFOTag = "ufo";
+        private const int RespawnDelay = 120;
 
         private readonly Control _container;
         private readonly Image[] _ufoImages;
@@ -32,10 +35,10 @@ namespace HelicopterShooter
 
             Sprite = new PictureBox
             {
-                Size = new Size(110, 100),
+                Size = new Size(UFOWidth, UFOHeight),
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 BackColor = Color.Transparent,
-                Tag = "ufo"
+                Tag = UFOTag,
             };
 
             container.Controls.Add(Sprite);

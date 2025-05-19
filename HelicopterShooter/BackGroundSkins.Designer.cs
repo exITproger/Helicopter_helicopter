@@ -35,47 +35,70 @@ namespace HelicopterShooter
             this.BackGround2ActionButton = new System.Windows.Forms.Button();
             this.BackGround3ActionButton = new System.Windows.Forms.Button();
             this.BackGround4ActionButton = new System.Windows.Forms.Button();
+            this.lblCurrentCountCoints = new System.Windows.Forms.Label();
+            this.picMoney = new System.Windows.Forms.PictureBox();
             this.picBackGroundDefault = new System.Windows.Forms.PictureBox();
             this.PictureBackGroundSkin3 = new System.Windows.Forms.PictureBox();
             this.PictureBackGroundSkin2 = new System.Windows.Forms.PictureBox();
             this.CloseBackGroundSkins = new System.Windows.Forms.Button();
             this.PictureBackGroundSkin1 = new System.Windows.Forms.PictureBox();
-            this.picMoney = new System.Windows.Forms.PictureBox();
-            this.lblCurrentCountCoints = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackGroundDefault)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMoney)).BeginInit();
             this.SuspendLayout();
             // 
             // BackGround1ActionButton
             // 
-            this.BackGround1ActionButton.Location = new System.Drawing.Point(106, 880);
+            this.BackGround1ActionButton.Location = new System.Drawing.Point(85, 880);
             this.BackGround1ActionButton.Name = "BackGround1ActionButton";
-            this.BackGround1ActionButton.Size = new System.Drawing.Size(300, 60);
+            this.BackGround1ActionButton.Size = new System.Drawing.Size(350, 80);
             this.BackGround1ActionButton.TabIndex = 14;
             // 
             // BackGround2ActionButton
             // 
-            this.BackGround2ActionButton.Location = new System.Drawing.Point(575, 880);
+            this.BackGround2ActionButton.Location = new System.Drawing.Point(555, 880);
             this.BackGround2ActionButton.Name = "BackGround2ActionButton";
-            this.BackGround2ActionButton.Size = new System.Drawing.Size(300, 60);
+            this.BackGround2ActionButton.Size = new System.Drawing.Size(350, 80);
             this.BackGround2ActionButton.TabIndex = 15;
             // 
             // BackGround3ActionButton
             // 
-            this.BackGround3ActionButton.Location = new System.Drawing.Point(1044, 880);
+            this.BackGround3ActionButton.Location = new System.Drawing.Point(1024, 880);
             this.BackGround3ActionButton.Name = "BackGround3ActionButton";
-            this.BackGround3ActionButton.Size = new System.Drawing.Size(300, 60);
+            this.BackGround3ActionButton.Size = new System.Drawing.Size(350, 80);
             this.BackGround3ActionButton.TabIndex = 16;
             // 
             // BackGround4ActionButton
             // 
-            this.BackGround4ActionButton.Location = new System.Drawing.Point(1513, 880);
+            this.BackGround4ActionButton.Location = new System.Drawing.Point(1503, 880);
             this.BackGround4ActionButton.Name = "BackGround4ActionButton";
-            this.BackGround4ActionButton.Size = new System.Drawing.Size(300, 60);
+            this.BackGround4ActionButton.Size = new System.Drawing.Size(350, 80);
             this.BackGround4ActionButton.TabIndex = 17;
+            // 
+            // lblCurrentCountCoints
+            // 
+            this.lblCurrentCountCoints.AutoSize = true;
+            this.lblCurrentCountCoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurrentCountCoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblCurrentCountCoints.ForeColor = System.Drawing.Color.Gold;
+            this.lblCurrentCountCoints.Location = new System.Drawing.Point(1602, 37);
+            this.lblCurrentCountCoints.Name = "lblCurrentCountCoints";
+            this.lblCurrentCountCoints.Size = new System.Drawing.Size(69, 76);
+            this.lblCurrentCountCoints.TabIndex = 13;
+            this.lblCurrentCountCoints.Text = "0";
+            // 
+            // picMoney
+            // 
+            this.picMoney.BackColor = System.Drawing.Color.Transparent;
+            this.picMoney.Image = global::HelicopterShooter.Properties.Resources.coins;
+            this.picMoney.Location = new System.Drawing.Point(1773, 33);
+            this.picMoney.Name = "picMoney";
+            this.picMoney.Size = new System.Drawing.Size(100, 99);
+            this.picMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMoney.TabIndex = 12;
+            this.picMoney.TabStop = false;
             // 
             // picBackGroundDefault
             // 
@@ -138,32 +161,12 @@ namespace HelicopterShooter
             this.PictureBackGroundSkin1.TabIndex = 1;
             this.PictureBackGroundSkin1.TabStop = false;
             // 
-            // picMoney
-            // 
-            this.picMoney.Image = global::HelicopterShooter.Properties.Resources.coins;
-            this.picMoney.Location = new System.Drawing.Point(1773, 33);
-            this.picMoney.Name = "picMoney";
-            this.picMoney.Size = new System.Drawing.Size(100, 99);
-            this.picMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMoney.TabIndex = 12;
-            this.picMoney.TabStop = false;
-            // 
-            // lblCurrentCountCoints
-            // 
-            this.lblCurrentCountCoints.AutoSize = true;
-            this.lblCurrentCountCoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCurrentCountCoints.ForeColor = System.Drawing.Color.Gold;
-            this.lblCurrentCountCoints.Location = new System.Drawing.Point(1658, 46);
-            this.lblCurrentCountCoints.Name = "lblCurrentCountCoints";
-            this.lblCurrentCountCoints.Size = new System.Drawing.Size(69, 76);
-            this.lblCurrentCountCoints.TabIndex = 13;
-            this.lblCurrentCountCoints.Text = "0";
-            // 
             // BackGroundSkins
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkGreen;
+            this.BackgroundImage = global::HelicopterShooter.Properties.Resources.ShopBackGround;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.ControlBox = false;
             this.Controls.Add(this.lblCurrentCountCoints);
@@ -183,11 +186,11 @@ namespace HelicopterShooter
             this.MinimizeBox = false;
             this.Name = "BackGroundSkins";
             this.Text = "BackGroundSkins";
+            ((System.ComponentModel.ISupportInitialize)(this.picMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackGroundDefault)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBackGroundSkin1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMoney)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
