@@ -10,6 +10,8 @@ namespace HelicopterShooter
 {
     public class Player : GameObject
     {
+        private const int StartTop = 540;
+        private const int StartLeft = 5;
         private const int PlayerSpeed = 15;
 
         private bool _movingUp, _movingDown;
@@ -39,8 +41,8 @@ namespace HelicopterShooter
 
         public void Reset()
         {
-            Sprite.Top = 540;
-            Sprite.Left = 5;
+            Sprite.Top = StartTop;
+            Sprite.Left = StartLeft;
             _movingUp = _movingDown = false;
         }
     }

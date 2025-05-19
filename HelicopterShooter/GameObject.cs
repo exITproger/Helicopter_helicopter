@@ -20,8 +20,6 @@ namespace HelicopterShooter
         public int Width => Sprite.Width;
         public int Height => Sprite.Height;
 
-        public Rectangle Bounds => Sprite.Bounds;
-
         public bool CollidesWith(GameObject other)
         {
             if (Sprite == null || other?.Sprite == null)
