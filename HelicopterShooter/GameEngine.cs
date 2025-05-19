@@ -107,6 +107,7 @@ namespace HelicopterShooter
 
         private void UpdateGame(object sender, EventArgs e)
         {
+
             _player.Update();
             _ufo.Update(_obstacles);
 

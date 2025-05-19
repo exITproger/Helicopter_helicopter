@@ -27,12 +27,11 @@ namespace HelicopterShooter
             if (Sprite == null || Sprite.Parent == null)
                 return;
 
+            _lastX = Sprite.Left; // Запоминаем позицию ДО перемещения
             Sprite.Left -= Speed;
 
             if (Sprite.Right < 0)
-            {
                 Reset();
-            }
         }
 
         public void Reset()
@@ -64,13 +63,20 @@ namespace HelicopterShooter
             _scored = false;
         }
 
+        private int _lastX; // Сохраняем позицию предыдущего кадра
+
         public bool ShouldScore(int playerLeft)
         {
-            if (!_scored && Sprite.Right < playerLeft)
+            if (_scored || Sprite == null)
+                return false;
+
+            // Если труба где-то рядом с игроком — засчитываем
+            if (Sprite.Right <= playerLeft + 10) // +10 пикселей "запаса"
             {
                 _scored = true;
                 return true;
             }
+
             return false;
         }
     }
