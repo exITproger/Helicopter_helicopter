@@ -18,6 +18,7 @@ namespace HelicopterShooter
             InitializeComponent();
             btnExit.Click += BtnExit_Click;
             DoubleBuffered = true;
+
         }
 
         private void BtnPlay_Click(object sender, EventArgs e)
@@ -32,8 +33,9 @@ namespace HelicopterShooter
         private void BtnShop_Click(object sender, EventArgs e)
         {
             ShopForm shopForm = new ShopForm();
-            shopForm.Show();
             Hide();
+            shopForm.ShowDialog();
+            Show();
         }
 
         private void BtnExit_Click(object sender, EventArgs e)

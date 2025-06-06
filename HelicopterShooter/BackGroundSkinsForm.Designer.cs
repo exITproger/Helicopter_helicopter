@@ -2,7 +2,7 @@
 
 namespace HelicopterShooter
 {
-    partial class BackGroundSkins
+    partial class BackGroundSkinsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,8 @@ namespace HelicopterShooter
             // 
             // BackGround1ActionButton
             // 
+            this.BackGround1ActionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackGround1ActionButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackGround1ActionButton.Location = new System.Drawing.Point(85, 880);
             this.BackGround1ActionButton.Name = "BackGround1ActionButton";
             this.BackGround1ActionButton.Size = new System.Drawing.Size(350, 80);
@@ -58,6 +60,8 @@ namespace HelicopterShooter
             // 
             // BackGround2ActionButton
             // 
+            this.BackGround2ActionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackGround2ActionButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackGround2ActionButton.Location = new System.Drawing.Point(555, 880);
             this.BackGround2ActionButton.Name = "BackGround2ActionButton";
             this.BackGround2ActionButton.Size = new System.Drawing.Size(350, 80);
@@ -65,6 +69,8 @@ namespace HelicopterShooter
             // 
             // BackGround3ActionButton
             // 
+            this.BackGround3ActionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackGround3ActionButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackGround3ActionButton.Location = new System.Drawing.Point(1024, 880);
             this.BackGround3ActionButton.Name = "BackGround3ActionButton";
             this.BackGround3ActionButton.Size = new System.Drawing.Size(350, 80);
@@ -72,6 +78,8 @@ namespace HelicopterShooter
             // 
             // BackGround4ActionButton
             // 
+            this.BackGround4ActionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackGround4ActionButton.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackGround4ActionButton.Location = new System.Drawing.Point(1503, 880);
             this.BackGround4ActionButton.Name = "BackGround4ActionButton";
             this.BackGround4ActionButton.Size = new System.Drawing.Size(350, 80);
@@ -85,7 +93,7 @@ namespace HelicopterShooter
             this.lblCurrentCountCoints.ForeColor = System.Drawing.Color.Gold;
             this.lblCurrentCountCoints.Location = new System.Drawing.Point(1602, 37);
             this.lblCurrentCountCoints.Name = "lblCurrentCountCoints";
-            this.lblCurrentCountCoints.Size = new System.Drawing.Size(69, 76);
+            this.lblCurrentCountCoints.Size = new System.Drawing.Size(87, 95);
             this.lblCurrentCountCoints.TabIndex = 13;
             this.lblCurrentCountCoints.Text = "0";
             // 
@@ -102,6 +110,7 @@ namespace HelicopterShooter
             // 
             // picBackGroundDefault
             // 
+            this.picBackGroundDefault.BackColor = System.Drawing.Color.DarkGreen;
             this.picBackGroundDefault.BackgroundImage = global::HelicopterShooter.Properties.Resources.BackGroundMain1;
             this.picBackGroundDefault.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBackGroundDefault.Location = new System.Drawing.Point(46, 287);
@@ -161,7 +170,7 @@ namespace HelicopterShooter
             this.PictureBackGroundSkin1.TabIndex = 1;
             this.PictureBackGroundSkin1.TabStop = false;
             // 
-            // BackGroundSkins
+            // BackGroundSkinsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -184,7 +193,7 @@ namespace HelicopterShooter
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "BackGroundSkins";
+            this.Name = "BackGroundSkinsForm";
             this.Text = "BackGroundSkins";
             ((System.ComponentModel.ISupportInitialize)(this.picMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackGroundDefault)).EndInit();

@@ -21,7 +21,8 @@ namespace HelicopterShooter
         private int _currentImageIndex;
         private bool _isDestroyed;
         private int _respawnTimer = 0;
-
+        public void Hide() => Sprite.Visible = false;
+        public void Show() => Sprite.Visible = true;
         public UFO(Control container)
         {
             _container = container;

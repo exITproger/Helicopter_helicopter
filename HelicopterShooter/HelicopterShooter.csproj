@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackGroundSkins.cs">
+    <Compile Include="BackGroundSkinsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackGroundSkins.Designer.cs">
-      <DependentUpon>BackGroundSkins.cs</DependentUpon>
+    <Compile Include="BackGroundSkinsForm.Designer.cs">
+      <DependentUpon>BackGroundSkinsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Bullet.cs" />
     <Compile Include="GameEngine.cs" />
@@ -61,6 +61,12 @@
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GameObject.cs" />
+    <Compile Include="HeroSkinsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeroSkinsForm.Designer.cs">
+      <DependentUpon>HeroSkinsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,12 +89,15 @@
       <DependentUpon>ShopForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UFO.cs" />
-    <EmbeddedResource Include="BackGroundSkins.resx">
-      <DependentUpon>BackGroundSkins.cs</DependentUpon>
+    <EmbeddedResource Include="BackGroundSkinsForm.resx">
+      <DependentUpon>BackGroundSkinsForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeroSkinsForm.resx">
+      <DependentUpon>HeroSkinsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
@@ -194,6 +203,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ShopBackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroSkin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroSkin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroSkin3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picHeroSkinShop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

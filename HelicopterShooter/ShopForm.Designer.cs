@@ -32,7 +32,10 @@ namespace HelicopterShooter
             this.PicBackGroundSkinsMenu = new System.Windows.Forms.PictureBox();
             this.BackGroundSkinsButton = new System.Windows.Forms.Button();
             this.CloseShopButton = new System.Windows.Forms.Button();
+            this.HeroSkinButton = new System.Windows.Forms.Button();
+            this.HeroSkinsPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicBackGroundSkinsMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeroSkinsPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // PicBackGroundSkinsMenu
@@ -80,6 +83,35 @@ namespace HelicopterShooter
             this.CloseShopButton.UseVisualStyleBackColor = true;
             this.CloseShopButton.Click += new System.EventHandler(this.CloseShopButton_click);
             // 
+            // HeroSkinButton
+            // 
+            this.HeroSkinButton.BackgroundImage = global::HelicopterShooter.Properties.Resources.HeroSkinsButton;
+            this.HeroSkinButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HeroSkinButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HeroSkinButton.FlatAppearance.BorderSize = 0;
+            this.HeroSkinButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.HeroSkinButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.HeroSkinButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HeroSkinButton.Location = new System.Drawing.Point(1118, 729);
+            this.HeroSkinButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HeroSkinButton.Name = "HeroSkinButton";
+            this.HeroSkinButton.Size = new System.Drawing.Size(400, 150);
+            this.HeroSkinButton.TabIndex = 9;
+            this.HeroSkinButton.UseVisualStyleBackColor = true;
+            this.HeroSkinButton.Click += new System.EventHandler(this.HeroSkinButton_Click);
+            // 
+            // HeroSkinsPicture
+            // 
+            this.HeroSkinsPicture.BackColor = System.Drawing.Color.Transparent;
+            this.HeroSkinsPicture.BackgroundImage = global::HelicopterShooter.Properties.Resources.picHeroSkinShop;
+            this.HeroSkinsPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HeroSkinsPicture.Location = new System.Drawing.Point(1065, 207);
+            this.HeroSkinsPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.HeroSkinsPicture.Name = "HeroSkinsPicture";
+            this.HeroSkinsPicture.Size = new System.Drawing.Size(500, 500);
+            this.HeroSkinsPicture.TabIndex = 10;
+            this.HeroSkinsPicture.TabStop = false;
+            // 
             // ShopForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -88,9 +120,12 @@ namespace HelicopterShooter
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.ControlBox = false;
+            this.Controls.Add(this.HeroSkinsPicture);
+            this.Controls.Add(this.HeroSkinButton);
             this.Controls.Add(this.PicBackGroundSkinsMenu);
             this.Controls.Add(this.BackGroundSkinsButton);
             this.Controls.Add(this.CloseShopButton);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -98,6 +133,7 @@ namespace HelicopterShooter
             this.Name = "ShopForm";
             this.Text = "ShopForm";
             ((System.ComponentModel.ISupportInitialize)(this.PicBackGroundSkinsMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeroSkinsPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +143,7 @@ namespace HelicopterShooter
         private System.Windows.Forms.Button CloseShopButton;
         private System.Windows.Forms.Button BackGroundSkinsButton;
         private System.Windows.Forms.PictureBox PicBackGroundSkinsMenu;
+        private System.Windows.Forms.Button HeroSkinButton;
+        private System.Windows.Forms.PictureBox HeroSkinsPicture;
     }
 }

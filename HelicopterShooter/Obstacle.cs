@@ -10,6 +10,8 @@ namespace HelicopterShooter
 {
     public class Obstacle : GameObject
     {
+        private const int MinHeight = 80;
+
         private bool _scored = false;
         private static int topObstacleHeight = 0;
         private static int holeHeight = 200;
@@ -42,7 +44,7 @@ namespace HelicopterShooter
             Sprite.Left = Sprite.Parent.ClientSize.Width;
 
             int totalHeight = Sprite.Parent.ClientSize.Height;
-            int minHeight = 80;
+            int minHeight = MinHeight;
             int maxTopHeight = totalHeight - holeHeight - minHeight;
 
             if (IsTopObstacle)

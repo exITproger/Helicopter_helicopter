@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05417F29-F885-4FFA-825B-E7AAD0C7A50D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HelicopterShooter</RootNamespace>
+    <AssemblyName>HelicopterShooter</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackGroundSkins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackGroundSkins.Designer.cs">
+      <DependentUpon>BackGroundSkins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="GameEngine.cs" />
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameObject.cs" />
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obstacle.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopForm.Designer.cs">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UFO.cs" />
+    <EmbeddedResource Include="BackGroundSkins.resx">
+      <DependentUpon>BackGroundSkins.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopForm.resx">
+      <DependentUpon>ShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helicopter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeroSkinsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundSkinsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundMain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBack3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundMain2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundMainInGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround3InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround2InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround1InGame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стенка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstBackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShopBackGround.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
